@@ -2,7 +2,7 @@ import {useSelector} from 'react-redux';
 import {profileSlice} from './profileSlice';
 import {RootState} from '../../Adapter/Redux/Store';
 
-export const useProfileModal = () => {
+export const useProfileModel = () => {
   const profileActions = profileSlice.actions;
   const profileDetails = useSelector((state: RootState) => state.profile);
 
