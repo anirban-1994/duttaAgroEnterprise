@@ -1,7 +1,10 @@
 import {configureStore} from '@reduxjs/toolkit';
+import {profileSlice} from '../../Model/Profile/profileSlice';
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    profile: profileSlice.reducer,
+  },
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
